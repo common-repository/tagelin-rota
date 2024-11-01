@@ -1,0 +1,849 @@
+
+/*	======================================================= */
+/*	Structural                                              */
+/*	======================================================= */
+
+.tagelin-rota-widget {
+	padding:0;
+	margin:0;
+}
+
+.tagelin-rota-config {
+	display:none;
+}
+
+.tagelin-rota-list {
+	border: 1px solid; /* black;*/
+}
+
+.tagelin-rota-panel {
+}
+
+.tagelin-rota-edit {
+	border: 1px solid; /* black;*/
+}
+
+.tagelin-rota-detail {
+	height:auto;
+}
+
+.tagelin-rota-attributes {
+}
+
+.tagelin-rota-button-band {
+}
+
+.tagelin-rota-buttons {
+	display: inline-block;
+}
+
+
+.tagelin-rota-list-content table {
+	width: 100%;
+
+}
+
+.tagelin-rota-list-content table td {
+	overflow-x: ellipsis;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+
+
+.tagelin-rota-entry {
+}
+
+
+.tagelin-rota-entry label{
+}
+
+
+.tagelin-rota-entry input{
+}
+
+.tagelin-rota-entry-msg  {
+	display: none;
+}
+
+
+
+.tagelin-rota-attribute {
+	display:block;
+	padding: 5px; 
+	height: auto; /*2.5em; */
+}
+
+.tagelin-rota-attribute-label {
+	display:block;
+	white-space: nowrap;
+	width: 80%; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.tagelin-rota-attribute-item {
+	display:block;
+	width: 100%;
+}
+
+
+.tagelin-rota-attribute-item-name {
+	display:inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width:80%;
+}
+
+.tagelin-rota-attribute-item-value {
+	display:inline-block;
+	overflow:hidden;
+	width: 15%;
+
+}
+
+.tagelin-rota-attribute-item-value input[type=checkbox] {
+	display:inline-block; 
+	width: 2em;
+	vertical-align: top;
+}
+
+
+
+.tagelin-rota-schedule .tagelin-rota-attribute {
+	padding-bottom: 15px;
+}
+
+.tagelin-rota-schedule  .tagelin-rota-attribute-item-name {
+	width: 40%;
+}
+
+.tagelin-rota-schedule  .tagelin-rota-attribute-item-value {
+	width: 60%;
+}
+
+
+.tagelin-rota-widget  input[text]{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+.tagelin-rota-widget  select {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+
+.tagelin-rota-widget .tagelin-rota-schedule-time select {
+	width: 4em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+
+
+.tagelin-rota-widget textarea {
+	display: block;
+	width: 100%;
+	height: 4em;
+	overflow-y: scroll;
+	overflow-x: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	resize: none;
+}
+
+
+
+.tagelin-rota-buttons button {
+	
+}
+
+
+.tagelin-rota-schedule-view-list {
+}
+
+.tagelin-rota-schedule-view-event {
+	display: block;
+}
+
+.tagelin-rota-schedule-view-details {
+	display: block;	
+}
+
+.tagelin-rota-schedule-view-detail {
+	display:block;
+}
+
+.tagelin-rota-schedule-view-description {
+	display: block;
+	white-space:pre-wrap;
+	width: 100%;
+}
+
+
+/*	======================================================= */
+/* 	Structural - Standard Screen                            */
+/*	======================================================= */
+
+@media screen and (min-width: 500px) {
+
+
+
+
+	.tagelin-rota-widget {
+		display: block;
+	}
+
+
+	.tagelin-rota-panel{
+		display:  block;
+	}
+
+		
+	.tagelin-rota-list {
+		display: block;
+		float:left;
+		width: 20%; 
+	}
+
+	.tagelin-rota-list-content {
+		display: block;
+		overflow-y: scroll;
+		position: relative;
+	}
+
+
+
+
+
+	.tagelin-rota-list-content table td {
+		max-width: 8em;
+	}
+
+
+	.tagelin-rota-edit {
+		float:right;
+		width:80%;
+	}
+
+	.tagelin-rota-edit-content {
+		display: block;
+	}
+
+
+	/* NAMING ::: .tagelin-rota-panel-detail {*/
+	.tagelin-rota-detail {
+		display:  block;
+		width: 50%;
+		float:left;
+		padding:1em;
+	}
+
+	.tagelin-rota-attributes {
+		position: relative;
+		display: block;
+		width: 50%;
+		float:right;
+	}
+
+
+	.tagelin-rota-attributes-content {
+		position:relative;
+		display:block;
+		border: 1px solid;
+		overflow-y:scroll;
+		height:80%; /* dynamically set by javascript */
+	}
+
+
+	.tagelin-rota-detail label{
+		display:block;
+		width:100%;
+		
+/*		display: inline-block;
+		max-width: 100%;
+*/
+		overflow: hidden;
+		text-overflow: ellipsis;
+/*		padding-left: 1em;
+		padding-right: 1em;
+*/
+	}
+
+
+	.tagelin-rota-attributes label{
+		display: inline-block;
+		max-width: 15em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding-top:0;
+		padding-bottom:0;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+	
+	.tagelin-rota-attribute-label {
+	}
+	
+	.tagelin-rota-attribute input[type=checkbox] {
+	}
+
+
+/*	.tagelin-rota-detail  input {
+		width: 10em;
+	}
+*/
+
+	.tagelin-rota-edit-event-role {
+		margin-right:1em;
+	}
+
+	.tagelin-rota-event-role-list {
+		width: 100%;
+
+	}
+
+	.tagelin-rota-edit-event-role-name {
+	}
+
+	.tagelin-rota-button-add {
+		float: right;
+	}
+
+	.tagelin-rota-schedule-location {
+		width: 100%;
+	}
+
+	.tagelin-rota-schedule-event {
+		width: 100%;
+	}
+
+	.tagelin-rota-schedule-time {
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+
+	.tagelin-rota-schedule-time select {
+	}
+
+	.tagelin-rota-person-list {
+		width: 10em;
+	}
+
+
+	.tagelin-rota-button-band {
+	};
+
+/*	.tagelin-rota-buttons {
+		border: 1px solid red;
+	}
+*/
+
+	.tagelin-rota-widget button {
+		margin: 5px;
+	}
+
+
+	
+	.tagelin-rota-schedule-view-event {
+		border:1px solid ; /*black;*/
+		width: 40em;
+		margin-bottom:10px;
+		float: left;
+		clear: left;
+	}
+
+	
+	
+	.tagelin-rota-schedule-view-name {
+		display: inline;
+		/*width: 20em;*/
+		font-size:larger;
+		font-weight:bold;
+		padding-left:1em;
+	}
+	
+	.tagelin-rota-schedule-view-time {
+		display: inline;
+		/*width: 25em;*/
+		font-size:larger;
+		font-weight:bold;
+		padding-left: 1em;
+	}
+	
+	
+	.tagelin-rota-schedule-view-location {
+		display: inline;
+		/*width: 15em;*/
+		font-size:larger;
+		font-weight:bold;
+		padding-left:1em;
+		padding-right:1em;
+		float:right;
+	}
+
+	.tagelin-rota-schedule-view-description {
+		padding-left:3em;
+		padding-right:3em;
+		float: left;
+	}
+	
+	.tagelin-rota-schedule-view-role {
+		width: 20em;
+		font-weight:bold;
+		padding-left:3em;
+		float: left;
+	}
+	
+	
+	.tagelin-rota-schedule-view-person {
+		width: 20em;
+		float: right;
+	
+	}
+	.tagelin-rota-schedule-view-aux {
+		width: 20em;
+		float: right;
+		font-size: 80%;
+		/*float:right; */
+		/*display: inline-block;*/
+	
+	}
+
+
+
+}
+
+/*	======================================================= */
+/*	Structural - Small screen                               */
+/*	======================================================= */
+
+
+@media screen and (max-width: 500px) {
+
+	.tagelin-rota-panel{
+		display:  block;
+		width: 300px;
+	}
+
+
+	.tagelin-rota-list {
+		display: block;
+		width: 100%;
+		border:2px solid black!important;
+	}
+
+
+	.tagelin-rota-list-content {
+		display: block;
+	/*	height: 6em;*/	/* NOTE this is overwritten by the js media function*/
+		overflow-y: scroll;
+	}
+
+
+
+	.tagelin-rota-edit {
+		border: 2px solid cyan;
+		display: block;
+	}
+
+	.tagelin-rota-edit-content {
+		border: 2px solid cyan;
+		display: block;
+		width:100%;
+	}
+
+	.tagelin-rota-panel-detail {
+		display:  block;
+	}
+
+
+	.tagelin-rota-schedule-event {
+		width: 100%;
+	}
+	
+
+	.tagelin-rota-schedule-location {
+		width: 100%;
+	}
+	
+	.tagelin-rota-attribute-label {
+		float: right;
+	}
+
+
+	.tagelin-rota-attributes-content {
+		display:block;
+		overflow-y:scroll;
+		height:4em; 
+	}
+
+
+
+	.tagelin-rota-button-band {
+		display:  block;
+	}
+	
+
+	.tagelin-rota-buttons {
+		float: left;
+	}
+
+	.tagelin-rota-widget button {
+/*		background: green!important; */
+	}
+
+
+
+	.tagelin-rota-schedule-view-event {
+		border:1px solid black;
+		/*width: 100%;*/
+		padding-bottom:20px;
+/*		float: left;
+		clear: left;
+*/
+	}
+
+	
+	
+	.tagelin-rota-schedule-view-name {
+		/*color:green;*/
+		display: block;/*inline;*/
+/*float: left;*/
+/*color:blue;*?
+		/*width: 20em;*/
+		font-size:larger;
+		font-weight:bold;
+		padding-left:1em;
+	}
+	
+	.tagelin-rota-schedule-view-time {
+		/* color:red;	 */
+/*float: left;*/
+		display: inline;
+		/*width: 20em;*/
+		font-size:larger;
+		font-weight:bold;
+	}
+	
+	
+	.tagelin-rota-schedule-view-location {
+		display: inline;
+/*float:left;*/
+		/* color:red;	 */
+		/*width: 20em;*/
+		font-size:larger;
+		font-weight:bold;
+		padding-left:1em;
+	}
+
+	.tagelin-rota-schedule-view-detail {
+display:block;
+/*color:red;*/
+
+/*
+border: 1px solid red;
+width: 100%;*/
+/*position:relative;*/
+}	
+	
+	.tagelin-rota-schedule-view-role {
+	display:block;	
+		font-weight:bold;
+		padding-left:3em;
+/*border:1px solid green;
+background:yellow;*/
+/*float:left;*/
+/*float:left;*/
+		/* background:yellow; */
+	}
+	
+	
+	.tagelin-rota-schedule-view-person {
+		
+/*display:inline-block;*/
+display: block;
+padding-left:30%;
+		/*float: right;*/
+	/*margin-left: 6em;*/
+/*		float:right; */
+		/*display: inline-block;*/
+	
+	}
+
+
+	.tagelin-rota-schedule-view-aux {
+		
+/*display:inline-block;*/
+display:block;
+padding-left:30%;
+		/*float: right;*/
+	/*margin-left: 6em;*/
+/*		float:right; */
+		/*display: inline-block;*/
+	
+	}
+
+}
+
+/*
+.ui-datepicker {
+    background: white;
+	border: 1px solid;
+}*/
+/* https://github.com/helen/wp-admin-jquery-ui/blob/master/jquery-ui-classic.css */
+
+.tagelin-rota-widget .ui-datepicker { width: 17em; padding: .2em .2em 0; display: none;  background: white;
+	border: 1px solid; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-prev { left:2px; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-next { right:2px; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.tagelin-rota-widget .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.tagelin-rota-widget .ui-datepicker select.ui-datepicker-month, 
+.tagelin-rota-widget .ui-datepicker select.ui-datepicker-year { width: 49%;}
+.tagelin-rota-widget .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.tagelin-rota-widget .ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.tagelin-rota-widget .ui-datepicker td { border: 0; padding: 1px; }
+.tagelin-rota-widget .ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.tagelin-rota-widget .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+
+
+
+	#ui-datepicker-div {
+		display: none;
+	}
+
+	.tagelin-rota-month-picker .ui-datepicker table{
+		display: none;
+	}
+
+	.tagelin-rota-group-id {
+		display:none;
+	}
+
+
+
+
+/*	======================================================= */
+/*	Identification                                          */
+/*	======================================================= */
+
+.tagelin-rota-role {
+}
+
+.tagelin-rota-role-name {
+}
+
+
+.tagelin-rota-person {
+}
+
+.tagelin-rota-person-name {
+}
+
+.tagelin-rota-person-email {
+}
+
+.tagelin-rota-person-telephone {
+}
+
+
+.tagelin-rota-location {
+}
+
+.tagelin-rota-location-name {
+}
+
+
+
+.tagelin-rota-event {
+}
+
+.tagelin-rota-event-name {
+}
+
+
+.tagelin-rota-event-role-id {
+	display:none;
+}
+
+.tagelin-rota-role-id {
+	display:none;
+}
+
+.tagelin-rota-schedule-detail-id {
+	display:none;
+}
+
+.tagelin-rota-edit-event-role-id {
+	display: none;
+}
+
+.tagelin-rota-event-role-name {
+	display:none;
+}
+.tagelin-rota-event-role-local-name {
+	display: none;
+}
+
+.tagelin-rota-event-role-delete {
+	float: right;
+}
+
+
+
+.tagelin-rota-schedule {
+}
+
+.tagelin-rota-schedule-name {
+}
+
+.tagelin-rota-schedule-event {
+}
+
+.tagelin-rota-schedule-location {
+}
+
+.tagelin-rota-schedule-date {
+}
+
+.tagelin-rota-schedule-time {
+}
+
+
+.tagelin-rota-schedule-view-time {
+}
+
+.tagelin-rota-schedule-view-name {
+};
+
+.tagelin-rota-schedule-view-location {
+}
+
+.tagelin-rota-schedule-view-description {
+}
+
+.tagelin-rota-schedule-view-role {
+}
+
+.tagelin-rota-schedule-view-person {
+}
+
+.tagelin-rota-schedule-view-aux {
+}
+
+/*	======================================================= */
+/*	Cursor on Waiting                                       */
+/*	======================================================= */
+
+.wait {
+	cursor: wait;
+}
+
+/*	======================================================= */
+/*	Display Preferences                                     */
+/*	======================================================= */
+
+.tagelin-rota-heading {
+	text-align: left;
+}
+
+
+
+
+
+/*	======================================================= */
+/*	Colour Preferences                                      */
+/*	======================================================= */
+
+
+.tagelin-rota-widget {
+	color: black;
+}
+
+
+.tagelin-rota-widget label{
+	color: black;
+}
+
+
+.tagelin-rota-widget button {
+/*	background: white; */
+}
+
+
+.tagelin-rota-entry-msg  {
+ 	color: red!important;
+	overflow:visible;
+}
+
+
+/*
+.tagelin-rota-list tr:nth-child(odd)
+{
+	background: yellow;
+}
+.tagelin-rota-list tr:nth-child(even)
+{
+	background: red;
+}
+*/
+
+.tagelin-rota-list .tagelin-rota-list-selected{
+background: green; /*!important;*/
+}
+
+
+
+.tagelin-rota-attributes-content .tagelin-rota-list-selected{
+background: green; /*!important;*/
+}
+
+
+.tagelin-rota-attribute-move input {
+	width:1em;
+}
+
+
+
+/*
+.spinner {
+position:relative;
+display:block;
+height:1em;
+width:1.5em;
+
+}
+
+.spinner div {
+display:inline-block;
+  background-color:red;
+
+}
+*/
+
+
+.short-list {
+ max-height:6em;
+}

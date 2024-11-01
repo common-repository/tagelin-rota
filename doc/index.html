@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>Tagelin Rota - Wordpress Plugin</title>
+</head>
+
+<body>
+
+<h1>Tagelin Rota - Wordpress Plugin</h1>
+<h2>Description</h2>
+<p>The plugin is used by embedding shortcodes into your page.</p>
+<p>There are 5 setup shortcodes and one for the finished display.</p>
+<p>These shortcodes are referred to as Role, People, Location, Event, Schedule and View.</p>
+<p>The set of shortcodes all work together in groups to enable multiple, independent schedules to be defined, each with their own people, roles, events.</p>
+<p>Each set of shortcodes work as part of a named group, enabling different sets of people/roles to be used in each group.</p>
+
+<h2>Download</h2>
+<p>The latest version of the plugin may be downloaded as a zip file from <a href="https://www.tagelin.com/download/tagelin-rota/tagelin-rota.zip">here</a>.
+<h2>Installation</h2>
+<ol>
+<li>Download the zip file and unzip it into your plugins directory
+or install the plugin through the WordPress plugins screen directly.
+<li>Activate the plugin through the 'Plugins' screen in WordPress.
+<li>Create pages to contain the setup shortcodes. These could be privately owned if you wish.
+<li>Put the View shortcode where you wish to see the finished schedule.
+</ol>
+
+<h2>Setup</h2>
+<h3>Setup Roles</h3>
+<ol>
+
+<li>In the page editor use the text mode to put the shortcode on the page:
+<pre>
+[tagelin-rota group="whatever" type="edit-role" title="Skills" ]
+</pre>
+<p>The <b>group</b> defines the group of resources we will be using. You can give it any name.</p>
+<p>The <b>type</b> must be &quot;edit-role&quot;, since we want the Edit Role widget to be embedded in the page.
+<p>The <b>title</b> is the text used in the heading for this editor.
+<p>Publish the page. You may mark it private if you wish.</p>
+<p>When you are finished it should look like this:</p>
+<a href="../assets/role-shortcode.png"><img src="../assets/role-shortcode.png"/></a>
+
+<li><p>View the published page.</p>
+<p>The editor consists of a, currently empty, listbox on the left and an edit panel on the right.</p>
+<a href="../assets/role-widget-empty.png"><img src="../assets/role-widget-empty.png"/></a>
+
+<li>Create a new Role.
+<p>Click on the &quot;New&quot; button.</p>
+<a href="../assets/role-widget-new.png"><img src="../assets/role-widget-new.png"/></a>
+
+
+<li><p>Enter the name of the Role in the editor panel.</p>
+<p>Click on the &quot;Save&quot; button</p>
+<a href="../assets/role-widget-save.png"><img src="../assets/role-widget-save.png"/></a>
+<p>When the Role is saved it is added to the Roles listbox:</p>
+<a href="../assets/role-widget-saved.png"><img src="../assets/role-widget-saved.png"/></a>
+<li>Add other Roles, as required.
+<li><p>You may change the Role names by selecting the item in the list and clicking it to enable edit mode.</p>
+<p>You need to use &quot;Save&quot; to save your changes or &quot;Cancel&quot; to revert to the previous name.</p>
+<li>You may delete a Role by selecting it and pressing &quot;Delete&quot;.
+
+
+
+</ol>
+<h3>Setup People </h3>
+<ol>
+<li>Go back to the page editor. Use the text mode to put the person shortcode on the page, below the role one:
+<pre>
+[tagelin-rota group="whatever" type="edit-person" title="People" ]
+</pre>
+<p>The <b>group</b> defines the group of resources we are using. It must match that in the edit-role shortcode.</p>
+<p>The <b>type</b> must be &quot;edit-person&quot;, since we want the Edit Person widget to be embedded in the page.
+<p>The <b>title</b> is the text used in the heading for this editor.
+<p>Save and update the page.</p>
+<p>When you are finished it should look like this:</p>
+<a href="../assets/person-shortcode.png"><img src="../assets/person-shortcode.png"/></a>
+
+<li><p>View the published page.</p>
+<p>The Person editor is displayed below the Role editor:</p>
+<a href="../assets/person-widget-empty.png"><img src="../assets/person-widget-empty.png"/></a>
+
+<li>Create a new Person.
+<p>Click on the &quot;New&quot; button.</p>
+<a href="../assets/person-widget-new.png"><img src="../assets/person-widget-new.png"/></a>
+
+<li><p>Enter the name of the Person in the editor panel.</p>
+<p>You may enter optional contact details.</p>
+<p>Select the roles for this person by clicking in the attributes list in the right-hand panel.</p>
+<a href="../assets/person-widget-list.png"><img src="../assets/person-widget-list.png"/></a>
+<li><p>Click on the &quot;Save&quot; button.</p>
+<p>When the Person is saved it is added to the listbox.</p>
+<li><p>Add other people, as required.</p>
+
+</ol>
+<h3>Setup Event Profiles</h3>
+<ol>
+<li>Go back to the page editor. Use the text mode to put the event shortcode on the page, below the person one:
+<pre>
+[tagelin-rota group="whatever" type="edit-event" title="Activities" ]
+</pre>
+<p>The <b>group</b> defines the group of resources we are using. It must match that in the other shortcodes.</p>
+<p>The <b>type</b> must be &quot;edit-event&quot;, since we want the Edit Event widget to be embedded in the page.
+<p>The <b>title</b> is the text used in the heading for this editor.
+<p>Save and update the page.</p>
+<p>When you are finished it should look like this:</p>
+<a href="../assets/event-shortcode.png"><img src="../assets/event-shortcode.png"/></a>
+
+<li><p>View the published page.</p>
+<p>The Event editor is displayed below the Person editor:</p>
+<a href="../assets/event-widget-empty.png"><img src="../assets/event-widget-empty.png"/></a>
+
+<li><p>Create a new Event type.</p>
+<p>Click on the &quot;New&quot; button.</p>
+<li><p>You need to give a name for this type of event. In our example &quot;Games Night&quot;.</p>
+<li><p>Then you need to say what roles are needed for this type of event.</p>
+<p>Select the role from the dropdown.</p>
+<a href="../assets/event-widget-add-role.png"><img src="../assets/event-widget-add-role.png"/></a>
+
+<li><p>Click on the &quot;Add&quot; button.</p>
+<p>The Role is added to the event roles list in the right-hand panel.</p>
+<a href="../assets/event-widget-added-role.png"><img src="../assets/event-widget-added-role.png"/></a>
+
+<p>The checkbox next to each role is used to show you want that Role. This is the default. If a Role is not checked it will be deleted when you save the event.</p>
+
+<li><p>Add other roles as required.</p>
+
+<p>If the role has a better name in the context of this event put that in the &quot;Role Name&quot; field. Otherwise leave this blank and we will use the role name as it is.</p>
+<a href="../assets/event-widget-namedrole.png"><img src="../assets/event-widget-named-role.png"/></a>
+
+
+<li><p>You may change a role by clicking it in the right-hand-panel then editing the details in the edit boxes.</p>
+<p>Use &quot;Add&quot; to save it.</p>
+<li><p>You may change the order of the Roles by clicking it and using the Up and Down arrows to move it to place.</p>
+
+<li><p>Click on the &quot;Save&quot; button.</p>
+<p>When the Event is saved it is added to the listbox.</p>
+<li><p>Add other event definitions, as required.</p>
+<a href="../assets/event-widget-list.png"><img src="../assets/event-widget-list.png"/></a>
+
+</ol>
+
+<h3>Setup Locations</h3>
+
+<ol>
+<li>Go back to the page editor. Use the text mode to put the location shortcode on the page, below the event one:
+<pre>
+[tagelin-rota group="whatever" type="edit-location" title="Location" ]
+</pre>
+<p>The <b>group</b> defines the group of resources we are using. It must match that in the other shortcodes.</p>
+<p>The <b>type</b> must be &quot;edit-location&quot;, since we want the Edit Location widget to be embedded in the page.
+<p>The <b>title</b> is the text used in the heading for this editor.
+<p>Save and update the page.</p>
+<p>When you are finished it should look like this:</p>
+<a href="../assets/location-shortcode.png"><img src="../assets/location-shortcode.png"/></a>
+
+<li><p>View the published page.</p>
+<p>The Location editor is displayed below the Event editor:</p>
+<a href="../assets/location-widget-empty.png"><img src="../assets/location-widget-empty.png"/></a>
+
+<li><p>Create a new Location type.</p>
+<p>Click on the &quot;New&quot; button.</p>
+<p>Enter location name.</p>
+<li><p>Click on the &quot;Save&quot; button.</p>
+<p>When the Location is saved it is added to the listbox.</p>
+<li><p>Add other locations, as required.</p>
+<a href="../assets/location-widget-list.png"><img src="../assets/location-widget-list.png"/></a>
+
+</ol>
+
+<h3>Schedule Events</h3>
+
+<ol>
+<li>Go back to the page editor. Use the text mode to put the schedule shortcode on the page, below the location one:
+<pre>
+[tagelin-rota group="whatever" type="edit-schedule" title="Schedule" ]
+</pre>
+<p>The <b>group</b> defines the group of resources we are using. It must match that in the other shortcodes.</p>
+<p>The <b>type</b> must be &quot;edit-schedule&quot;, since we want the Edit Schedule widget to be embedded in the page.
+<p>The <b>title</b> is the text used in the heading for this editor.
+<p>Save and update the page.</p>
+<p>When you are finished it should look like this:</p>
+<a href="../assets/schedule-shortcode.png"><img src="../assets/schedule-shortcode.png"/></a>
+
+<li><p>View the published page.</p>
+<p>The Schedule editor is displayed below the Location editor.</p>
+
+<li><p>Create a new Scheduled Event.</p>
+<p>Click on the &quot;New&quot; button.</p>
+<a href="../assets/schedule-widget-new.png"><img src="../assets/schedule-widget-new.png"/></a>
+<p>The &quot;Name&quot; field is the optional.</p>
+<p>You need to say what type of event this is. Use the &quot;Event&quot; dropdown.</p>
+<p>The appropriate roles are then shown in the right-hand panel.</p>
+<p>Select a time and location for the scheduled event.</p>
+<a href="../assets/schedule-widget-select-location.png"><img src="../assets/schedule-widget-select-location.png"/></a>
+<p>The &quot;Until&quot; finish time is optional but wil be displayed if set.</p>
+<p>Use the dropdowns next to each Role to select an appropriate Person to fill each role.</p>
+<a href="../assets/schedule-widget-select-person.png"><img src="../assets/schedule-widget-select-person.png"/></a>
+
+<li><p>Click on the &quot;Save&quot; button.</p>
+<p>When the Scheduled event is saved it is added to the listbox.</p>
+<a href="../assets/schedule-widget-save.png"><img src="../assets/schedule-widget-save.png"/></a>
+
+<li><p>Add other entries to the schedule, as required.</p>
+
+<li><p>The &quot;Description&quot; field is used to give additional information to display about an event.</p>
+<a href="../assets/schedule-widget-save-with-description.png"><img src="../assets/schedule-widget-save-with-description.png"/></a>
+
+
+<li><p>The text boxes below each Person in the Role selection are used to provide additional information about the particular Role in the context of this scheduled event and will be printed next to their name.<p>
+
+
+</ol>
+
+<h3>Display the Schedule</h3>
+
+<ol>
+<li>Go back to the page editor. Go to the page where you wish to display the forthcoming events. Use the text mode to put the schedule-view shortcode on the page.
+<pre>
+[tagelin-rota group="whatever" type="view-schedule" title="Forthcoming Events" ]
+</pre>
+<p>The <b>group</b> defines the group of resources we are using. It must match that in the other shortcodes.</p>
+<p>The <b>type</b> must be &quot;view-schedule&quot;, since we want the View widget to be embedded in the page.
+<p>The <b>title</b> is the text used in the heading for this editor.
+<p>Save and update the page.</p>
+<p>When you are finished it should look like this:</p>
+<a href="../assets/view-shortcode.png"><img src="../assets/view-shortcode.png"/></a>
+
+<li><p>View the published page.</p>
+<p>The Schedule is displayed like this:</p>
+<a href="../assets/view-widget.png"><img src="../assets/view-widget.png"/></a>
+
+
+</ol>
+
+<h2>Shortcodes</h2>
+A summary of the [tagelin-rota] shortcode parameters.
+<h3>Shortcode edit-role</h3>
+<table>
+<tbody>
+<tr><td>type</td><td>edit-role</td></tr>
+<tr><td>group</td><td>The group of resources we are using. It must match that in the other shortcodes</td></tr>
+<tr><td>title</td><td>The display heading</td></tr>
+</tbody>
+</table>
+
+<h3>Shortcode edit-person</h3>
+<table>
+<tbody>
+<tr><td>type</td><td>edit-person</td></tr>
+<tr><td>group</td><td>The group of resources we are using. It must match that in the other shortcodes</td></tr>
+<tr><td>title</td><td>The display heading</td></tr>
+</tbody>
+</table>
+
+<h3>Shortcode edit-event</h3>
+<table>
+<tbody>
+<tr><td>type</td><td>edit-event</td></tr>
+<tr><td>group</td><td>The group of resources we are using. It must match that in the other shortcodes</td></tr>
+<tr><td>title</td><td>The display heading</td></tr>
+</tbody>
+</table>
+
+<h3>Shortcode edit-location</h3>
+<table>
+<tbody>
+<tr><td>type</td><td>edit-location</td></tr>
+<tr><td>group</td><td>The group of resources we are using. It must match that in the other shortcodes</td></tr>
+<tr><td>title</td><td>The display heading</td></tr>
+</tbody>
+</table>
+
+<h3>Shortcode edit-schedule</h3>
+<table>
+<tbody>
+<tr><td>type</td><td>edit-schedule</td></tr>
+<tr><td>group</td><td>The group of resources we are using. It must match that in the other shortcodes</td></tr>
+<tr><td>title</td><td>The display heading</td></tr>
+<tr><td>date-format</td><td>The format code used to display date in editor.</td></tr>
+<tr><td>list-date-format</td><td>The format code used to display date in listbox.</td></tr>
+<tr><td>range-from</td><td>The range code used to specify the start date for display in the listbox.</td></tr>
+<tr><td>range-to</td><td>The range code used to specify the end date for display in the listbox.</td></tr>
+</tbody>
+</table>
+
+
+<h3>Shortcode view-schedule</h3>
+<table>
+<tbody>
+<tr><td>type</td><td>view-schedule</td></tr>
+<tr><td>group</td><td>The group of resources we are using. It must match that in the other shortcodes</td></tr>
+<tr><td>title</td><td>The display heading</td></tr>
+<tr><td>date-format</td><td>The format code used to display date in editor.</td></tr>
+<tr><td>list-date-format</td><td>The format code used to display date in listbox.</td></tr>
+<tr><td>range-from</td><td>The range code used to specify the start date for display.</td></tr>
+<tr><td>range-to</td><td>The range code used to specify the end date for display.</td></tr>
+<tr><td>range-selector</td><td>the CSS class of a ui.datepicker to display dates or &quot;none&quot; if no date select widget is required.</td></tr>
+</tbody>
+</table>
+
+<h2>Date Formats</h2>
+<p>Dates and times are stored as UTC but displayed in the local time.</p>
+<p>The format of dates is specified in the shortcode using an ordered pattern of symbols:</p>
+
+<table>
+<tbody>
+<tr><td>d</td><td>day of month (no leading zero)</td><tr>
+<tr><td>dd</td><td>day of month (two digit)</td><tr>
+<tr><td>D</td><td>day name short</td></tr>
+<tr><td>DD</td><td>day name long</td></tr>
+<tr><td>m</td><td>month of year (no leading zero)</td></tr>
+<tr><td>mm</td><td>month of year (two digit)</td></tr>
+<tr><td>M</td><td>month name short</td></tr>
+<tr><td>MM</td><td>month name long</td></tr>
+<tr><td>y</td><td>year (two digit)</td></tr>
+<tr><td>yy</td><td>year (four digit)</td></tr>
+</tbody>
+</table>
+
+<p>For example, 
+<pre>
+date-format="dd-mm-yy"
+</pre>
+This will show 2nd of December 2018 as &quot;02-12-2018&quot;</p>
+
+<h2>Range Format</h2>
+<p>The to and from dates are calculated from the specified date according to a pattern:</p>
+<p>A sign &quot;+&quot; or &quot;-&quot; for the direction</p>
+<p>A count number.</p>
+<p>A symbol for the scale ( &quot;y&quot; for years, &quot;m&quot; for months, &quot;d&quot; for days, &quot;f&quot; for forever ).
+
+For example:
+<pre>
++1y	next year
+-1y 	last year
++0y	end of year
+-0y	start of year
++0m	end of month
+-0m	start of month
++1d	tomorrow
++0f	to forever
+-0f	from forever
+</pre>
+
+These may be joind together to make compund expressions:
+<pre>
++0m+3d		the 3rd day of next month
+</pre>
+
+
+<h2>Custom Display<h2>
+<p>Advanced users may override the default display in two ways.</p>
+<p>The CSS stylesheet &quot;tagelin-rota-view.css&quot; can be created in your in your theme directory. This will override any setting in the plugin file &quot;tagelin-rota.css&quot;.</p>
+<p>The templates used for the structure of the view-schedule shortcode are in the plugin template directory.
+You can copy these to your theme folder and edit them there.
+</p>
+
+
+</body>
+</html>
+

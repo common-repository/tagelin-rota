@@ -1,0 +1,212 @@
+#  fuzzy
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Tagelin Rota 1.0\n"
+"Report-Msgid-Bugs-To: support@tagelin.com\n"
+"POT-Creation-Date: 2018-11-14 18:06+0000\n"
+"PO-Revision-Date: 2018-11-14 18:06+0000\n"
+"Last-Translator: Julian Dean <support@tagelin.com>\n"
+"Language-Team: Julian <support@tagelin.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#Button New
+msgid "New"
+msgstr ""
+
+
+#Button Save
+msgid "Save"
+msgstr ""
+
+
+#Button Cancel
+msgid "Cancel"
+msgstr ""
+
+
+#Button Delete
+msgid "Delete"
+msgstr ""
+
+# Title, Role Widget
+msgid "Edit Roles"
+msgstr ""
+
+
+# Title, Person Widget
+msgid "Edit Staff"
+msgstr ""
+
+# Title, Location Widget
+msgid "Edit Locations"
+msgstr ""
+
+
+# Title, Edit Eventst
+msgid "Edit Events"
+msgstr ""
+
+
+# Title, Schedule Widget
+msgid "Edit Schedule"
+msgstr ""
+
+# Role: Name
+msgid "Name"
+msgstr ""
+
+# Placeholder 
+msgid "put name here"
+msgstr ""
+
+msgid "Must have a name"
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+# Placeholder
+msgid "put email address here"
+msgstr ""
+
+
+msgid "Telephone"
+msgstr ""
+
+
+# Placeholder
+msgid "put telephone number here"
+msgstr ""
+
+
+# Roles Attributes
+msgid "Roles"
+msgstr ""
+
+
+
+
+# subheading in events widget
+msgid "Edit Event Role"
+msgstr ""
+
+# Role label in Event Role editor
+msgid "Role"
+msgstr ""
+
+# Role Name label in Event Role editor
+msgid "RoleName"
+msgstr ""
+
+# add new event role
+msgid "Add"
+msgstr ""
+
+# ScheduleWidget
+# Event selector
+msgid "Event"
+msgstr ""
+
+
+
+# ScheduleWidget
+# Location selector
+msgid "Location"
+msgstr ""
+
+
+
+# Date selector
+msgid "Date"
+msgstr ""
+
+
+# Schedule widget
+# Error: date too early
+msgid "Too early"
+msgstr ""
+
+
+# Schedule widget
+# Error: date toolate
+msgid "Too late"
+msgstr ""
+
+
+# Schedule widget
+# Error: date in past, cannot edit now
+msgid "Cannot change now"
+msgstr ""
+
+
+# Schedule widget
+# Error: date in past cannot be deleted
+msgid "Cannot delete now"
+msgstr ""
+
+#schedule widget
+msgid "Must select an event"
+msgstr ""
+
+#schedule widget
+msgid "Event is deleted"
+msgstr ""
+
+
+#schedule widget
+msgid "Must select a location"
+msgstr ""
+
+
+#schedule widget
+msgid "Location is deleted"
+msgstr ""
+
+
+#schedule widget
+msgid "Must select a date"
+msgstr ""
+
+# Time selector
+msgid "Time"
+msgstr ""
+
+
+# Time until selector
+msgid "Until"
+msgstr ""
+
+
+# Notes label
+msgid "Notes"
+msgstr ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
